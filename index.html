@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computing Award Night Voting</title>
+    <link href="img/welsu.png" rel="icon">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <h1 class="header-title">
+                <span class="award-icon">🏆</span>
+                Face of Wellspring
+                <span class="award-icon">🏆</span>
+            </h1>
+            <p class="header-subtitle">Cast your vote for this year's Mr and Ms Wellspring</p>
+            
+            <div class="countdown-wrapper">
+                <p class="countdown-title">Event Begins In</p>
+                <div class="countdown-container">
+                    <div class="countdown-item">
+                        <div id="days" class="countdown-value">00</div>
+                        <div class="countdown-label">Days</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div id="hours" class="countdown-value">00</div>
+                        <div class="countdown-label">Hours</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div id="minutes" class="countdown-value">00</div>
+                        <div class="countdown-label">Minutes</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div id="seconds" class="countdown-value">00</div>
+                        <div class="countdown-label">Seconds</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </header>
+
+    <div class="container">
+        <div class="progress-container">
+            <div class="progress-details">
+                <span id="progress-text">0% Complete</span>
+                <span id="categories-completed">0/6 Categories</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+        </div>
+
+        <form id="voting-form">
+       
+
+            <div class="category-container">
+                <!-- Nursing - Miss Wellspring -->
+                <div class="category paid-category" data-category="Nursing Ms Wellspring" data-paid="true">
+                    <h2>Nursing - Miss Wellspring <span class="paid-badge">₦100 per vote</span></h2>
+                    <ul class="nominees">
+                        <li class="nominee">
+                            <label>
+                                <input type="radio" name="Nursing Ms Wellspring" value="Fejiro Omasibro" data-paystack-link="https://paystack.com/pay/fejiro">
+                                <div class="nominee-info">
+                                    <img src="img/fejiro.jpg" alt="Fejiro Omasibro" class="nominee-avatar">
+                                    <span class="nominee-name">Fejiro Omasibro</span>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="nominee">
+                            <label>
+                                <input type="radio" name="Nursing Ms Wellspring" value="Ediagbonya Racheal" data-paystack-link="https://paystack.com/pay/ediagbonya-rachael">
+                                <div class="nominee-info">
+                                    <img src="img/rachael.jpg" alt="Ediagbonya Racheal" class="nominee-avatar">
+                                    <span class="nominee-name">Ediagbonya Racheal</span>
+                                </div>
+                            </label>
+                        </li>
+
+                        <li class="nominee">
+                            <label>
+                                <input type="radio" name="Nursing Ms Wellspring" value="Nwite chioma promise" data-paystack-link="">
+                                <div class="nominee-info">
+                                    <img src="img/Nwite.jpg" alt="Nwite chioma promise" class="nominee-avatar">
+                                    <span class="nominee-name">Nwite chioma promise</span>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="nominee">
+                            <label>
+                                <input type="radio" name="Nursing Ms Wellspring" value="Kimberly" data-paystack-link="https://paystack.com/pay/kimberly">
+                                <div class="nominee-info">
+                                    <img src="img/kimberly.jpg" alt="Kimberly Eke" class="nominee-avatar">
+                                    <span class="nominee-name">Kimberly Eke</span>
+                                </div>
+                            </label>
+                        </li>
+
+                        <li class="nominee">
+                            <label>
+                                <input type="radio" name="Nursing Ms Wellspring" value="Nwachukwu Chioma" data-paystack-link="https://paystack.com/pay/nwachukwu-chioma">
+                                <div class="nominee-info">
+                                    <img src="img/chioma.jpg" alt="Nwachukwu Chioma" class="nominee-avatar">
+                                    <span class="nominee-name">Nwachukwu Chioma</span>
+                                </div>
+                            </label>
+                        </li>
+                        
+                        <li class="nominee">
+                            <label>
+                                <input type="radio" name="Nursing Ms Wellspring" value="Uzomezie sylvia" data-paystack-link="https://paystack.com/pay/uzomezie">
+                                <div class="nominee-info">
+                                    <img src="img/sylvia.jpg" alt="Uzomezie sylvia" class="nominee-avatar">
+                                    <span class="nominee-name">Uzomezie sylvia</span>
+                                </div>
+                            </label>
+                        </li>
+                        
+                        
+                         
+                    </ul>
+                </div>
+
+                <!-- Computing Mr Wellspring -->
+                <div class="category paid-category" data-category="Computing Mr Wellspring" data-paid="true">
+                    <h2>Computing - Mr Wellspring <span class="paid-badge">₦100 per vote</span></h2>
+                    <ul class="nominees">
+                        <li class="nominee">
+                            <label>
+                                <input type="radio" name="Computing Mr Wellspring" value="Imasuen-Walter Trinity" data-paystack-link="https://paystack.com/pay/imasuen-walter">
+                                <div class="nominee-info">
+                                    <img src="img/walter.jpg" alt="Imasuen-Walter Trinity" class="nominee-avatar">
+                                    <span class="nominee-name">Imasuen-Walter Trinity</span>
+                                </div>
+                            </label>
+                        </li>
+
+                        <li class="nominee">
+                            <label>
+                                <input type="radio" name="Computing Mr Wellspring" value="ENAJEWHE CHIWENKE GODSWILL" data-paystack-link="https://paystack.com/pay/enajewhe">
+                                <div class="nominee-info">
+                                <div class="nominee-info">
+                                    <img src="img/Godswill.jpg" alt="ENAJEWHE CHIWENKE GODSWIL" class="nominee-avatar">
+                                    <span class="nominee-name">ENAJEWHE CHIWENKE GODSWILL</span>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="nominee">
+                            <label>
+                                <input type="radio" name="Computing Mr Wellspring" value="Classic Clown" data-paystack-link="https://paystack.com/pay/classic-clownn">
+                                <div class="nominee-info">
+                                <div class="nominee-info">
+                                    <img src="img/classic.jpg" alt="Clasic Clown" class="nominee-avatar">
+                                    <span class="nominee-name">Ogundun Moyinjah Michael (Classicclown)</span>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="nominee">
+                            <label>
+                                <input type="radio" name="Computing Mr Wellspring" value="Freddy" data-paystack-link="https://paystack.com/pay/ehikwe">
+                                <div class="nominee-info">
+                                    <img src="img/freddy.jpg" alt="Freddy" class="nominee-avatar">
+                                    <span class="nominee-name">Ehikwe Destiny (Freddy)</span>
+                                </div>
+                            </label>
+                        </li>
+                        
+                        <li class="nominee">
+                            <label>
+                                <input type="radio" name="Computing Mr Wellspring" value="Akpeninor Favour" data-paystack-link="https://paystack.com/pay/akpeninor">
+                                <div class="nominee-info">
+                                    <img src="img/favour.jpg" alt="Akpeninor Favour" class="nominee-avatar">
+                                    <span class="nominee-name">Akpeninor Favour</span>
+                                </div>
+                            </label>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+
+                <!-- Business Administration - Mr Wellspring -->
+                <div class="category paid-category" data-category="Business Administration - Mr Wellspring" data-paid="true">
+                    <h2>Business Administration - Mr Wellspring <span class="paid-badge">₦100 per vote</span></h2>
+                    <ul class="nominees">
+                        <li class="nominee">
+                            <label>
+                                <input type="radio" name="Business Administration - Mr Wellspring" value="Glory" data-paystack-link="https://paystack.com/pay/glory-benjamin">
+                                <div class="nominee-info">
+                               
+                                    <img src="img/glory.jpg" alt="Glory" class="nominee-avatar">
+                                    <span class="nominee-name">Glory Benjamin Uche</span>
+                                </div>
+                            </label>
+                        </li>
+                      
+                        
+                        <li class="nominee">
+                            <label>
+                                <input type="radio" name="Business Administration - Mr Wellspring" value="EMMANUEL CHIGOZIE ALOZIE" data-paystack-link="https://paystack.com/pay/emmanuel-alozie">
+                                <div class="nominee-info">
+                                
+                                    <img src="img/alozie.jpg" alt="EMMANUEL CHIGOZIE ALOZIE" class="nominee-avatar">
+                                    <span class="nominee-name">EMMANUEL CHIGOZIE ALOZIE</span>
+                                </div>
+                            </label>
+                        </li>
+              
+                    </ul>
+                </div>
+
+
+                <!-- Public Administration - Mr Wellspring -->
+                <div class="category paid-category" data-category="Public Administration - Mr Wellspring" data-paid="true">
+                    <h2>Public Administration - Mr Wellspring <span class="paid-badge">₦100 per vote</span></h2>
+                    <ul class="nominees">
+                        <li class="nominee">
+                            <label>
+                                <input type="radio" name="Business Administration - Mr Wellspring" value="Praise" data-paystack-link="https://paystack.com/pay/uhuekpenma">
+                                <div class="nominee-info">
+                               
+                                    <img src="img/praise.jpg" alt="Praise" class="nominee-avatar">
+                                    <span class="nominee-name">Uhuekpenma Osawese praise</span>
+                                </div>
+                            </label>
+                        </li>
+                      
+                        
+                        <li class="nominee">
+                            <label>
+                                <input type="radio" name="Public Administration - Mr Wellspring" value="Godson" data-paystack-link="https://paystack.com/pay/williams-tale">
+                                <div class="nominee-info">
+                                
+                                    <img src="img/alozie.jpg" alt="Williams Godson" class="nominee-avatar">
+                                    <span class="nominee-name">Williams Tale Godson</span>
+                                </div>
+                            </label>
+                        </li>
+              
+                    </ul>
+                </div>
+
+                <!-- Medical Laboratory - Miss Wellspring -->
+                <div class="category paid-category" data-category="Medical Laboratory - Miss Wellspring" data-paid="true">
+                    <h2>Medical Laboratory - Miss Wellspring <span class="paid-badge">₦100 per vote</span></h2>
+                    <ul class="nominees">
+                        <li class="nominee">
+                            <label>
+                                <input type="radio" name="Medical Laboratory - Miss Wellspring" value="Alexa" data-paystack-link="https://paystack.com/pay/roya-alexa">
+                                <div class="nominee-info">
+                               
+                                    <img src="img/Alexa.jpg" alt="Alexa" class="nominee-avatar">
+                                    <span class="nominee-name">Roya Alexa</span>
+                                </div>
+                            </label>
+                        </li>
+                      
+                        
+                        <li class="nominee">
+                            <label>
+                                <input type="radio" name="Medical Laboratory - Miss Wellspring" value="Dora" data-paystack-link="https://paystack.com/pay/izevbigie">
+                                <div class="nominee-info">
+                                
+                                    <img src="img/deborah.jpg" alt="Izevbigie elogho Deborah" class="nominee-avatar">
+                                    <span class="nominee-name">Izevbigie elogho Deborah</span>
+                                </div>
+                            </label>
+                        </li>
+              
+                    </ul>
+                </div>
+
+                <!-- Medical Laboratory - Mr Wellspring -->
+                <div class="category paid-category" data-category="Medical Laboratory - Mr Wellspring" data-paid="true">
+                    <h2>Medical Laboratory - Mr Wellspring <span class="paid-badge">₦100 per vote</span></h2>
+                    <ul class="nominees">
+                        <li class="nominee">
+                            <label>
+                                <input type="radio" name="Medical Laboratory - Mr Wellspring" value="Timzy" data-paystack-link="https://paystack.com/pay/nwafor">
+                                <div class="nominee-info">
+                               
+                                    <img src="img/chisom.jpg" alt="Alexa" class="nominee-avatar">
+                                    <span class="nominee-name">Nwafor Chisom</span>
+                                </div>
+                            </label>
+                        </li>
+                      
+              
+                    </ul>
+                </div>
+
+                <!-- Nursing - Mr Wellspring -->
+                <div class="category paid-category" data-category="Nursing - Mr Wellspring" data-paid="true">
+                    <h2>Nursing - Mr Wellspring <span class="paid-badge">₦100 per vote</span></h2>
+                    <ul class="nominees">
+                        <li class="nominee">
+                            <label>
+                                <input type="radio" name="Nursing - Mr Wellspring" value="Prosper" data-paystack-link="https://paystack.com/pay/amengialue">
+                                <div class="nominee-info">
+                               
+                                    <img src="img/prosper.jpg" alt="Prosper" class="nominee-avatar">
+                                    <span class="nominee-name">Amengialue Michael</span>
+                                </div>
+                            </label>
+                        </li>
+
+                        <li class="nominee">
+                            <label>
+                                <input type="radio" name="Nursing - Mr Wellspring" value="Uyiekpen Osaretin Igbinosa" data-paystack-link="https://paystack.com/pay/uyiekpen">
+                                <div class="nominee-info">
+                               
+                                    <img src="img/desmond.jpg" alt="Uyiekpen Osaretin Igbinosa" class="nominee-avatar">
+                                    <span class="nominee-name">Uyiekpen Osaretin Igbinosa</span>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="nominee">
+                            <label>
+                                <input type="radio" name="Nursing - Mr Wellspring" value="GAIUS" data-paystack-link="https://paystack.com/pay/nagbonmuna">
+                                <div class="nominee-info">
+                               
+                                    <img src="img/Gaius.jpg" alt="Prosper" class="nominee-avatar">
+                                    <span class="nominee-name">NAGBONMUNA OSAMUEDEMEN GAIUS</span>
+                                </div>
+                            </label>
+                        </li>
+                      
+              
+                    </ul>
+                </div>
+
+                <!-- Computer Science - Miss Wellspring -->
+                <div class="category paid-category" data-category="Computer Science - Miss Wellspring" data-paid="true">
+                    <h2>Computer Science - Miss Wellspring <span class="paid-badge">₦100 per vote</span></h2>
+                    <ul class="nominees">
+                        <li class="nominee">
+                            <label>
+                                <input type="radio" name="Computer Science - Miss Wellspring" value="Tehilah" data-paystack-link="https://paystack.com/pay/ndah">
+                                <div class="nominee-info">
+                               
+                                    <img src="img/treasure.jpg" alt="Treasure" class="nominee-avatar">
+                                    <span class="nominee-name">Ndah Treasure Iyene</span>
+                                </div>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+                <!-- Public Health - Miss Wellspring -->
+                <div class="category paid-category" data-category="Public Health - Miss Wellspring" data-paid="true">
+                    <h2>Public Health - Miss Wellspring<span class="paid-badge">₦100 per vote</span></h2>
+                    <ul class="nominees">
+                        <li class="nominee">
+                            <label>
+                                <input type="radio" name="Public Health - Miss Wellspring" value="Tehilah" data-paystack-link="https://paystack.com/pay/otakpemehi">
+                                <div class="nominee-info">
+                               
+                                    <img src="img/Tehilah.jpg" alt="Tehillah" class="nominee-avatar">
+                                    <span class="nominee-name">Otakpemehi Tehillah Ejemen</span>
+                                </div>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Public Administration - Miss Wellspring -->
+                <div class="category paid-category" data-category="Public Administration - Miss Wellspring" data-paid="true">
+                    <h2>Public Administration - Miss Wellspring <span class="paid-badge">₦100 per vote</span></h2>
+                    <ul class="nominees">
+                        <li class="nominee">
+                            <label>
+                                <input type="radio" name="Public Administration - Miss Wellspring" value="Tehilah" data-paystack-link="https://paystack.com/pay/enadeghe">
+                                <div class="nominee-info">
+                               
+                                    <img src="img/smile.jpg" alt="Smile" class="nominee-avatar">
+                                    <span class="nominee-name">Enadeghe Osasere Sylvia</span>
+                                </div>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Accounting - Miss Wellspring -->
+                <div class="category paid-category" data-category="Accounting - Miss Wellspring" data-paid="true">
+                    <h2>Accounting - Miss Wellspring <span class="paid-badge">₦100 per vote</span></h2>
+                    <ul class="nominees">
+                        <li class="nominee">
+                            <label>
+                                <input type="radio" name="Accounting - Miss Wellspring" value="Tehilah" data-paystack-link="https://paystack.com/pay/osahon">
+                                <div class="nominee-info">
+                               
+                                    <img src="img/osahon.jpg" alt="Smile" class="nominee-avatar">
+                                    <span class="nominee-name">Osahon Favour osariemen/span>
+                                </div>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+                
+
+                
+
+            <!-- <div class="submit-container">
+                <button type="button" class="btn btn-submit" onclick="window.location.href='results.html';">
+                    Check Results
+                </button>
+            </div> -->
+            
+        </form>
+    </div>
+
+    <!-- Payment Confirmation Modal -->
+    <div class="modal" id="payment-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Payment Required</h2>
+            </div>
+            <div class="modal-body">
+                <p>You're voting for <span id="nominee-name"></span> in the <span id="category-name"></span> category.</p>
+                <p>This is a paid category. You will be redirected to Paystack to complete your payment.</p>
+                <p></p><p style="color: blank; font-weight: bold; font-size: 17px; animation: blink 1s infinite;">The higher the amount, the greater your votes and chances of winning</p>
+
+                <style>
+                @keyframes blink {
+                  50% { opacity: 0; }
+                }
+                </style>
+                
+            </div>
+            <div class="modal-footer">
+                <button class="btn" id="cancel-payment">Cancel</button>
+                <button class="btn btn-submit" id="proceed-payment">Proceed to Payment</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">Vote submitted successfully!</div>
+
+ 
+</body>
+</html>
